@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<link rel="stylesheet" href="styles.css" />
+
+<style>
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+feildset {
+    border:none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f
+}
+
+feildset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display:block;
+    margin: 0.5rem 0;
+}
+
+input, 
+textarea, 
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input [type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input [type="file"] {
+    padding: 1px 2px;
+}
+
+.inline {
+    display: inline;
+}
+
+#terms-and-conditions {
+    font-size:small; font-family:Helvetica; 
+}
+
+
+
+#Submit {
+     margin-left: 15%; margin-bottom:15%; border-radius:40px;
+}
+
+#btn {
+    width:69%; border-radius: 10px; padding:0.3%; font-family:'Playfair Display' serif; background-color: rgb(228, 228, 228); border: #3b3b4f 1px solid;
+    padding:0.9%
+}
+
+#grey {
+    border-radius:10px; background-color: grey; margin-right: 32%; margin-left:32%; padding-bottom: 2%;
+}
+
+body {
+    margin-top:2%;
+}
+
+.reg {
+    padding-top:2%;
+}
+
+</style>
+</head>
+
+    <body>
+        <section id="grey">  
+<h1 class="reg">Registration Form</h1>
+
+    
+<p>Please fill out this form with the required information</p>
+
+<form method="post" action="">
+    <feildset>
+        <label for="first-name">Username <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required/></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="password" type="password" pattern="[a-z0-5] {8,} " /></label>
+ </feildset>
+
+
+
+ <feildset>
+    <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+    <label for="referrer">How did you hear about us?
+        <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Twitter</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Instagram</option>
+            <option value="4">Other</option>
+        </select>
+
+        </label>
+        <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like swimming at the beach"></textarea>
+        </label>
+ </feildset>
+
+ <label for="terms-and-conditions">
+   <bold><p class="inline" id="terms-and-conditions">By submitting this form, you agree to our Terms of Service and Privacy Policy. You acknowledge that your data may be processed in accordance with these terms.</p></bold>
+</label>
+    </form>
+
+<a id="Submit" href="helloworld2.html">
+   <button type="submit" id="btn" value="Submit"><strong>Submit</strong></button>
+</a>
+
+</section>
+    
+</body>
+</html>
